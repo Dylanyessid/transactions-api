@@ -4,7 +4,7 @@ import { Transaction } from "../entites/Transaction";
 import { createErrorResponse, createSucessResponse } from "../utils/ResponseMaker";
 import { UserService } from "./user.service";
 
-
+//Servicio que se conecta con la base de datos para realizar las operaciones con la entidad
 export class TransactionService {
     private static transactionRepository = AppDataSource.getRepository(Transaction);
     

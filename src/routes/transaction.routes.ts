@@ -4,6 +4,7 @@ import { createTransaction, getTransactionsByUserId } from "../controllers/trans
 import validateDTO from "../middlewares/validateDTOs";
 import { CreateTransactionDto } from "../dto/createTransaction.dto";
 
+
 const router = Router()
 
 router.get('/:user_id', getTransactionsByUserId)

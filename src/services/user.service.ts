@@ -6,10 +6,11 @@ import {
 } from "../utils/ResponseMaker";
 import { createUser } from "./../controllers/user.controller";
 
+//Servicio que se conecta con la base de datos para realizar las operaciones con la entidad
 export class UserService {
   userRepository = AppDataSource.getRepository(User);
 
-
+  
   async getAllUsers() {
     try {
       const users = await this.userRepository.find();

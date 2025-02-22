@@ -38,6 +38,34 @@ Una vez hecho, probar con el comando para ejecutarlo en local:
   npm run dev 
 ```
 
+##Endpoints
+
+✳️Listar usuarios
+GET {URL}/api/v1/users
+
+✳️Crear usuario
+POST {URL}/api/v1/users
+```json
+
+{
+  "name":"Dylan 4",
+  "email":"dylanyessid14904@gmail.com"
+}
+```
+
+✳️Crear transacción
+POST {URL}/api/v1/transactions
+
+```json
+{
+  "user_id":1,
+  "amount":500,
+  "type":"deposit"
+}
+```
+
+✳️Listar transacciones de un usuario
+GET {URL}/api/v1/transactions/{ID DE USUARIO}
 
 ## Estructura
 
@@ -59,3 +87,4 @@ Routes: Definición de endpoints
 Services: Capa de abstracción que se conecta directamente con la base de datos y opera bajo la lógica de la app
 
 Utils: Funcionalidades y utilidades vatias
+

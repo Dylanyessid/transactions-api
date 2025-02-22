@@ -1,5 +1,6 @@
 import { IsIn, IsNumber, IsPositive } from "class-validator";
 
+//DTO para la creación de transacciones
 export class CreateTransactionDto {
     
     @IsNumber()
@@ -8,7 +9,7 @@ export class CreateTransactionDto {
     @IsNumber()
     @IsPositive()
     amount: number;
-    //concept: string;
+    
 
     @IsIn(['withdrawal', 'deposit'])
     type: string;

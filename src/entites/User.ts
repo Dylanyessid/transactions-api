@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, OneToMany } from 'typeorm';
 import { Transaction } from './Transaction';
 
+//Entidad que representa la tabla users en la base de datos
 @Entity('users')
 export class User {
     @PrimaryGeneratedColumn()

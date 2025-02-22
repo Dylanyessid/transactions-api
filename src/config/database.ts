@@ -5,7 +5,7 @@ import { Transaction } from "../entites/Transaction";
 
 const {dbHost, dbName, dbPassword, dbPort, dbUser} = envs
 
-
+//Configuración de la base de datos
  const AppDataSource = new DataSource({
     type: "postgres",
     host: dbHost,
@@ -18,6 +18,7 @@ const {dbHost, dbName, dbPassword, dbPort, dbUser} = envs
     logging: false,
 });
 
+//Conexión a la base de datos
 export const connectToDatabase = async () => {
     try {
         await AppDataSource.initialize();
